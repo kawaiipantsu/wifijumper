@@ -8,16 +8,6 @@ So created this little project logo, thought it was fun :) But welcome! This is 
 
 It did not take long for me to settle on some ESP8266 spinoff variation that accepts avr C/C++, it has all i need. To choose the correct ESP board is actually harder than you think, there are so many spinoff's from the original Wemos D1 mini. I ordered via Amazon (DE) and just took the first and cheapest i could find. This ended up being XCSOURCE® D1 Mini (TE441-DE). It was based on a mini Nodemcu Lua WiFi that used a ESP8266-12H from Shenzhen Hysiry Technology Co., Ltd. Again it's important to know that there are a lot of the ESP8266 boards out there...
 
-> **XSOURCE D1 Mini**
->
-> This is the XSOURCE D1 Mini board, based on ESP8266 microcontroller
-![XCSOURCE D1 Mini](Docs/Images/xsource-d1-mini.png)
-
-> **ESP8266-12H**
->
-> This is the ESP8266 microcontroller from Shenzhen Hysiry Technology Co., Ltd
-![ESP8266-12H](Docs/Images/esp8266.png)
-
 > Now lets build it, programm it and use it!
 > Please note that the database backend part is not covered to a full extend here. It's up to you what you want to do with the data!
 
@@ -78,6 +68,19 @@ It's faily simple, yet got some nice error checking rutines and features.
 
 I thought it would be fun with a bit more project photos. GitHub has always been a cool source for projects and knowlagde but sometimes i think it lacks better "README" files (i know documentation is boring..). Many projects don't really tell the hole story or show what is what. Many times you are left behind to just guess what the creater/maker was thinking etc. So i wanted to include a bit of project photos for your viewing pleasure :)
 
+> **XSOURCE D1 Mini**
+>
+> This is the XSOURCE D1 Mini board, based on ESP8266 microcontroller
+![XCSOURCE D1 Mini](Docs/Images/xsource-d1-mini.png)
+
+> **ESP8266-12H**
+>
+> This is the ESP8266 microcontroller from Shenzhen Hysiry Technology Co., Ltd
+![ESP8266-12H](Docs/Images/esp8266.png)
+
+> **EM-406A GPS Module**
+>
+> Sirf III chipset GPS module with 6 pin cable. Includes power/lock indicator LED and backup supercap
 ![EM-406A GPS Module](Docs/Images/gps-module.png)
 
 ## Apache / Database backend (data logging)
