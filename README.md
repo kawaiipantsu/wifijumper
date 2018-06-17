@@ -25,44 +25,30 @@ It did not take long for me to settle on some ESP8266 spinoff variation that acc
 
 > So to boil it all down, I want something to connect to a open wifi network.
 > If it has internet access, send detailed information back home
-> That's it :)
+> - That's it :)
 
-I'm making the code so that it can connect to a list of predefined accesspoints the socalled "known wifi networks". It then scans for nearby wifi networks and checks if any of them are using no-encryption and tries to connect. If it has no internet access on that network it will blacklist it and continue it's search for a usable wifi network.
+I want it to scan the area for wifi-networks, if it finds a open network (ie. no encryption) i want it to connect to that network. Check if it can send a request to my backend with details on the connected network and location. If it's succssful then disconnect continue scanning for open networks and it all starts over.
 
-As soon as it has internet access it will begin to send the dB meter values to the backend server for post-processing. If the backend server or the http call fails in any way the unit will re-initialise and begin the wifi network scanning process again after a while.
+Of course we need error checking and also we need a way to keep track inside the unit what networks it has been connected to so it won't try to re-connect to any previous networks.
 
-I first wanted to use the Max 4466 (electret microphone amplifier) but i have now ordered a Max 9814 instead. It seems it's better quality and better op-amp and variable and automatic gain. So i can't wait to implement this.
-
-It's faily simple, yet got some nice error checking rutines and features.
+Below you will find my "TODO" list, this is more or less just my thoughts on what it should be able to do and what could be cool to do.
 
 *My TODO list*
 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [x] 
+- [ ] Function to scan for networks
+- [ ] Function to scan for networks with no encryption
+- [ ] Perhaps combind above functions?
+- [ ] Have a hardcoded BSSID blacklist?
+- [ ] Function to get GEO location
+- [ ] Function(s) to toggle low power mode?
+- [ ] Function to disconnect from wifi network
+- [ ] Case LED's to show status?
+- [ ] Function to POST/GET details
+- [ ] Storing Persistent Data in ESP8266
+- [ ] Look into ESP8266FS
+- [ ] Look into File system object (SPIFFS)
+- [ ] Function to add "used" BSSID's
+- [ ] Function to remove "used" BSSID's
 
 ## Project Photos
 
