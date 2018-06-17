@@ -27,6 +27,22 @@ class WifiJumper
     uint8_t* BSSID;
     int32_t channel;
     bool isHidden;
+    const char* encryptionTypeStr(uint8_t authmode) {
+      switch(authmode) {
+          case ENC_TYPE_NONE:
+              return "Open";
+          case ENC_TYPE_WEP:
+              return "WEP";
+          case ENC_TYPE_TKIP:
+              return "WPA-TKIP";
+          case ENC_TYPE_CCMP:
+              return "WPA2-CCMP";
+          case ENC_TYPE_AUTO:
+              return "Auto";
+          default:
+              return "?";
+      }
+    }
 };
 
 #endif

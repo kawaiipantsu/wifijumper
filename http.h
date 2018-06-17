@@ -14,8 +14,9 @@ class HTTP
     void sendDetails();
     void getConfig();
   private:
-    char * callback_url;
-    char * config_url;
+    char * userAgent = "WiFi Jumper/1.0 (ESP8266; Arduino) kawaiipantsu/wifijumper";
+    char * callback_url = "http://172.30.30.1/wifijumper.php?callback";
+    char * config_url = "http://172.30.30.1/wifijumper.php?config";
     const char* httpCodeStr(int response) {
     switch(response) {
         case HTTPC_ERROR_CONNECTION_REFUSED:

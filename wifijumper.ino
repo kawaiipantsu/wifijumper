@@ -14,17 +14,30 @@
  ***/
 
 /* Include header files and libraries */
+#include "debug.h"
 #include "Arduino.h"
 #include "esp8266.h"
 #include "wifi.h"
 #include "gps.h"
 #include "http.h"
 
+/* Wifi Jumper Setup */
+const char deviceID[] = "WJ001";
+
 /* Arduino "Setup" stage 
  *  - This function will be called once as the first thing when 
  *    the bootloader is done.
  */
-void setup() {}
+void setup() {
+  Serial.begin(115200);
+  MyDebug mydebug;
+  MyESP myesp;
+  myesp.chipInfo();
+  mydebug.output("== WiFI Jumper ==\n");
+  mydebug.output("Device ID: ");
+  mydebug.output(deviceID);
+  mydebug.output("\n");
+}
 
 /* Arduino "Loop" stage 
  *  - This function will be looped over and over once the setup() 
