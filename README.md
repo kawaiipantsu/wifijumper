@@ -64,6 +64,11 @@ I thought it would be fun with a bit more project photos. GitHub has always been
 > This is the ESP8266 microcontroller from Shenzhen Hysiry Technology Co., Ltd
 ![ESP8266-12H](Docs/Images/esp8266.png)
 
+> **Battery Shield TE668**
+>
+> This is just a simple battery shield for the D1-mini board, it has a recharge chip and simple boost converter for 5v.
+![TE668](Docs/Images/battery-module.png)
+
 > **EM-406A GPS Module**
 >
 > Sirf III chipset GPS module with 6 pin cable. Includes power/lock indicator LED and backup supercap
