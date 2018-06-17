@@ -49,6 +49,10 @@ Below you will find my "TODO" list, this is more or less just my thoughts on wha
 - [ ] Look into File system object (SPIFFS)
 - [ ] Function to add "used" BSSID's
 - [ ] Function to remove "used" BSSID's
+- [ ] Look into power usage
+- [ ] External antenna for Wifi and GPS ?
+- [ ] Enclosure and switches
+- [ ] Design own enclosure ?
 
 ## Project Photos
 
