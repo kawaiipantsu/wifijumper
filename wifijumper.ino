@@ -43,4 +43,4 @@ void setup() {
  *  - This function will be looped over and over once the setup() 
  *    function has been run.
  */
-void loop() {}
+void loop() { }
