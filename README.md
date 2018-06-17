@@ -78,6 +78,8 @@ It's faily simple, yet got some nice error checking rutines and features.
 
 I thought it would be fun with a bit more project photos. GitHub has always been a cool source for projects and knowlagde but sometimes i think it lacks better "README" files (i know documentation is boring..). Many projects don't really tell the hole story or show what is what. Many times you are left behind to just guess what the creater/maker was thinking etc. So i wanted to include a bit of project photos for your viewing pleasure :)
 
+![EM-406A GPS Module](Docs/Images/gps-module.png)
+
 ## Apache / Database backend (data logging)
 
 The backend is jsut a simple Apache web server hosting a PHP file that accepts my WiFi Jumper requests. It takes the arguments and save them to a database (MySQL in my case) where it logs the timestamp of the request to (to get around not having a Real-Time clock located on the device).
