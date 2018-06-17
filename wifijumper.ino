@@ -14,13 +14,11 @@
  ***/
 
 /* Include header files and libraries */
-#include <ESP8266WiFi.h>
-#include <ESP8266WiFiMulti.h>
-#include <ESP8266HTTPClient.h>
 #include "Arduino.h"
+#include "esp8266.h"
+#include "wifi.h"
 #include "gps.h"
 #include "http.h"
-
 
 /* Arduino "Setup" stage 
  *  - This function will be called once as the first thing when 
